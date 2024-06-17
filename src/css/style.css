@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 #signUpForm {
-  max-width: 500px;
+  /* max-width: ; */
   background-color: #ffffff;
   margin: 40px auto;
   padding: 40px;
@@ -24,7 +25,7 @@ body {
 }
 #signUpForm .form-header .stepIndicator.finish {
   font-weight: 600;
-  color: #009688;
+  color: #39a7ff;
 }
 #signUpForm .form-header .stepIndicator::before {
   content: "";
@@ -40,12 +41,12 @@ body {
   border: 3px solid #ecf5f4;
 }
 #signUpForm .form-header .stepIndicator.active::before {
-  background-color: #a7ede8;
+  background-color: #39a7ff;
   border: 3px solid #d5f9f6;
 }
 #signUpForm .form-header .stepIndicator.finish::before {
-  background-color: #009688;
-  border: 3px solid #b7e1dd;
+  background-color: #39a7ff;
+  border: 3px solid #39a7ff;
 }
 #signUpForm .form-header .stepIndicator::after {
   content: "";
@@ -57,10 +58,10 @@ body {
   background-color: #f3f3f3;
 }
 #signUpForm .form-header .stepIndicator.active::after {
-  background-color: #a7ede8;
+  background-color: #39a7ff;
 }
 #signUpForm .form-header .stepIndicator.finish::after {
-  background-color: #009688;
+  background-color: #39a7ff;
 }
 #signUpForm .form-header .stepIndicator:last-child:after {
   display: none;
@@ -73,7 +74,7 @@ body {
   border-radius: 5px;
 }
 #signUpForm input:focus {
-  border: 1px solid #009688;
+  border: 1px solid #39a7ff;
   outline: 0;
 }
 #signUpForm input.invalid {
@@ -87,8 +88,8 @@ body {
   gap: 20px;
 }
 #signUpForm .form-footer button {
-  background-color: #009688;
-  border: 1px solid #009688 !important;
+  background-color: #39a7ff;
+  border: 1px solid #39a7ff !important;
   color: #ffffff;
   border: none;
   padding: 13px 30px;
@@ -101,8 +102,7 @@ body {
 #signUpForm .form-footer button:hover {
   opacity: 0.8;
 }
-
 #signUpForm .form-footer #prevBtn {
   background-color: #fff;
-  color: #009688;
+  color: #39a7ff;
 }

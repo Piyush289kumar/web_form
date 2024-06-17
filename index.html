@@ -13,64 +13,239 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
-<body>
-    
-    <h1 class="text-center fs-4">Form Wizard - Multi Step Form</h1>
-    <form id="signUpForm" action="#!">
-        <!-- start step indicators -->
-        <div class="form-header d-flex mb-4">
-            <span class="stepIndicator">Account Setup</span>
-            <span class="stepIndicator">Social Profiles</span>
-            <span class="stepIndicator">Personal Details</span>
-        </div>
-        <!-- end step indicators -->
-        <!-- step one -->
-        <div class="step">
-            <p class="text-center mb-4">Create your account</p>
-            <div class="mb-3">
-                <input type="email" placeholder="Email Address" oninput="this.className = ''" name="email">
-            </div>
-            <div class="mb-3">
-                <input type="password" placeholder="Password" oninput="this.className = ''" name="password">
-            </div>
-            <div class="mb-3">
-                <input type="password" placeholder="Confirm Password" oninput="this.className = ''" name="password">
+<body class="bg-light">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class=" display-2 fw-bolder">मध्यप्रदेश राज्य अधिवक्ता परिषद</h1>
+                <h3 class="fw-bold">उच्च न्यायालय परिसर, जबलपुर 482007, 0761.2678877</h3>
+                <p class="fs-4">Email: bar_council_mp@yahoo.in, Website: sbcofmp.org.in</p>
+                <h2 class="fs-1 fw-bolder p-3 border border-dark border-5">अधिवक्ता नामांकन हेतु आवेदन
+                    पत्र</h2>
+                <h2 class="fs-1 fw-bolder">वर्ष 2023</h2>
             </div>
         </div>
-        <!-- step two -->
-        <div class="step">
-            <p class="text-center mb-4">Your presence on the social network</p>
-            <div class="mb-3">
-                <input type="text" placeholder="Linked In" oninput="this.className = ''" name="linkedin">
-            </div>
-            <div class="mb-3">
-                <input type="text" placeholder="Twitter" oninput="this.className = ''" name="twitter">
-            </div>
-            <div class="mb-3">
-                <input type="text" placeholder="Facebook" oninput="this.className = ''" name="facebook">
-            </div>
-        </div>
-        <!-- step three -->
-        <div class="step">
-            <p class="text-center mb-4">We will never sell it</p>
-            <div class="mb-3">
-                <input type="text" placeholder="Full name" oninput="this.className = ''" name="fullname">
-            </div>
-            <div class="mb-3">
-                <input type="text" placeholder="Mobile" oninput="this.className = ''" name="mobile">
-            </div>
-            <div class="mb-3">
-                <input type="text" placeholder="Address" oninput="this.className = ''" name="address">
-            </div>
-        </div>
-        <!-- start previous / next buttons -->
-        <div class="form-footer d-flex">
-            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-        </div>
-        <!-- end previous / next buttons -->
-    </form>
+        <div class="row">
+            <div class="col-12">
+                <form id="signUpForm" action="#!">
+                    <!-- start step indicators -->
+                    <div class="form-header d-flex mb-4">
+                        <span class="stepIndicator">Page 1</span>
+                        <span class="stepIndicator">Page 2</span>
+                        <span class="stepIndicator">Page 3</span>
+                    </div>
+                    <!-- end step indicators -->
+                    <!-- step one -->
+                    <div class="step">
+                        <!-- <p class="text-center mb-4">Create your account</p> -->
+                        <div class="mb-3">
+                            <label for="sam1" class="px-1">आवेदक का नाम श्री / श्रीमति / कु.</label>
+                            <input type="text" placeholder="आवेदक का नाम श्री / श्रीमति / कु." name="applicant_name"
+                                id="applicant_name">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="sam1" class="px-1">व्यवसाय स्थल (जहां विधि व्यवसाय करना हैं)</label>
+                            <input type="text" placeholder="व्यवसाय स्थल (जहां विधि व्यवसाय करना हैं)" name="">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mt-3">
+                                <div class="mb-3">
+                                    <label for="जन्म तिथी" class="px-1">जन्म तिथी</label>
+                                    <input type="date" placeholder="जन्म तिथी" name="">
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-3">
+                                <div class="mb-3">
+                                    <label for="जाति" class="px-1">जाति</label>
+                                    <select class="form-select form-select-md pb-4"
+                                        aria-label=".form-select-lg example">
+                                        <!-- <select class="form-select" aria-label="Default select example"> -->
+                                        <option selected>जाति (SC/ST/GEN/OBC)</option>
+                                        <option value="SC">SC</option>
+                                        <option value="ST">ST</option>
+                                        <option value="GEN">GEN</option>
+                                        <option value="OBC">OBC</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-3">
+                                <div class="mb-3">
+                                    <label for="जाति" class="px-1">विधि अंतिम परीक्षा उत्तीर्ण करने का वर्ष</label>
+                                    <select class="form-select form-select-md pb-4"
+                                        aria-label=".form-select-lg example">
+                                        <!-- <select class="form-select" aria-label="Default select example"> -->
+                                        <option selected>YYYY</option>
+                                        <option value="0">2020</option>
+                                        <option value="0">2021</option>
+                                        <option value="0">2022</option>
+                                        <option value="0">2023</option>
+                                        <option value="0">2024</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-3">
+                                <div class="mb-3">
+                                    <label for="aadhar_card" class="px-1">आधार कार्ड नं.</label>
+                                    <input type="text" name="aadhar_card" id="aadhar_card" maxlength="12"
+                                        minlength="12">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="mb-3">
+                                    <label for="father_husband_name" class="px-1">पिता / पति का नाम</label>
+                                    <input type="text" name="father_husband_name" id="father_husband_name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="mb-3">
+                                    <label for="address" class="px-1">पता / पत्र व्यवहार</label>
+                                    <input type="text" name="address" id="address">
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-3">
+                                <div class="mb-3">
+                                    <label for="pin" class="px-1">पिन</label>
+                                    <input type="text" name="pin" id="pin" maxlength="8" minlength="6">
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-3">
+                                <div class="mb-3">
+                                    <label for="mobile" class="px-1">फोन / मो.</label>
+                                    <input type="text" name="mobile" id="mobile" maxlength="10" minlength="10">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="mb-3">
+                                    <label for="email" class="px-1">ई-मेल</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="mb-3">
+                                    <label for="mahavidhyalak" class="px-1">विधि महाविद्यालय का नाम जहां से अध्ययन किया
+                                        है</label>
+                                    <input type="text" name="mahavidhyalak" id="mahavidhyalak">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">प्रथम सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1" placeholder="प्रथम सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">द्वितीय सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1"
+                                        placeholder="द्वितीय सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">तृतीय सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1" placeholder="तृतीय सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">चतुर्थ सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1"
+                                        placeholder="चतुर्थ सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">पंचम सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1" placeholder="पंचम सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">छटवा सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1" placeholder="छटवा सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">सातवां सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1"
+                                        placeholder="सातवां सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">आठवां सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1" placeholder="आठवां सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">नवमां सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1" placeholder="नवमां सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">दसवां सेमेस्टर उत्तीर्ण वर्ष</label>
+                                    <input type="text" name="sam1" id="sam1" placeholder="दसवां सेमेस्टर उत्तीर्ण वर्ष">
+                                </div>
+                            </div>
+                            <div class="col-md-8"></div>
+                            <div class="col-md-6 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">उत्तराधिकारी (नाॅमिनी) का नाम</label>
+                                    <input type="text" name="sam1" id="sam1"
+                                        placeholder="उत्तराधिकारी (नाॅमिनी) का नाम">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="mb-3">
+                                    <label for="sam1" class="px-1">उत्तराधिकारी (नाॅमिनी) का संबंध</label>
+                                    <input type="text" name="sam1" id="sam1"
+                                        placeholder="उत्तराधिकारी (नाॅमिनी) का संबंध">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p>( नोट - फार्म की वैद्यता जारी दिनांक से 2 वर्ष के लिये होगी । )</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- step two -->
+                    <div class="step">
 
+                        
+
+                        <div class="col-md-6 mt-3">
+                            <div class="mb-3">
+                                <label for="father_husband_name" class="px-1">पिता / पति का नाम</label>
+                                <input type="text" name="father_husband_name" id="father_husband_name">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- step three -->
+                    <div class="step">
+                        <p class="text-center mb-4">We will never sell it</p>
+                        <div class="mb-3">
+                            <input type="text" placeholder="Full name" oninput="this.className = ''" name="fullname">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" placeholder="Mobile" oninput="this.className = ''" name="mobile">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" placeholder="Address" oninput="this.className = ''" name="address">
+                        </div>
+                    </div>
+                    <!-- start previous / next buttons -->
+                    <div class="form-footer d-flex">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    </div>
+                    <!-- end previous / next buttons -->
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="src/js/main.js"></script>
 </body>
 
